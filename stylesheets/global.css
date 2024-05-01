@@ -1,0 +1,79 @@
+@font-face {
+    font-family: ibm;
+    src: url(../assets/fonts/ibm_vga_8x16.ttf);
+}
+body {
+    min-height: 100vh;
+    background-color: #000;
+    color: #FFFFFF;
+    font-family: ibm;
+    font-size: 1.3rem;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+@media screen and (max-width: 786px) {
+    body {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-size: 1.2rem;
+    }
+}
+p {
+    line-height: 1.25rem;
+}
+.splash {
+    display: grid;
+    height: 100vh;
+}
+.splashtext {
+    font-size: 3.5rem;
+    letter-spacing: .25rem;
+    color: #FFD60A;
+    align-self: center;
+    justify-self: center;
+}
+@media screen and (max-width: 786px) {
+    .splash,
+    .splashtext {
+        display: none;
+    }
+}
+
+#navigation {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#navigation a {
+    color: #006bcf;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#navigation a:hover {
+    cursor: pointer;
+    color: #FFD60A;
+    text-decoration: underline;
+}
+
+div.body_primary{
+    display: grid;
+}
+.header {
+    font-size: 2.2rem;
+    color: #FFD60A;
+}
+.subheader {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+.copyright {
+    margin-top: 10vh;
+    text-align: center;
+}
