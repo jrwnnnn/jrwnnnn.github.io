@@ -1,8 +1,9 @@
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  gtag('config', 'G-H16N9DYWLG');
+gtag('config', 'G-H16N9DYWLG');
+
 document.addEventListener("DOMContentLoaded", function() {
     const license = document.getElementById("license_click_action");
 
