@@ -80,7 +80,15 @@ div.body_primary{
 highlight {
     color: #FFD60A;
 }
-.copyright {
+license {
+    color: #006bcf;
+    text-decoration: none;
+}
+license:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer_text {
     margin-top: 10vh;
     text-align: center;
 }
