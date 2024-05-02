@@ -21,6 +21,7 @@
     width: 20vw;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    margin-top: .5rem;
 }
 .links img {
     -webkit-filter: invert(100%);
