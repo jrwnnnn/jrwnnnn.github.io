@@ -56,14 +56,14 @@
         gap: 1rem;
     }
 }
-.homepage_blog_link {
+.recent_article_link {
     text-decoration: none;
     color: #FFFF;
 }
-.homepage_blog_link:hover {
+.recent_article_link:hover {
     cursor: pointer;
 }
-.article {
+.article_container {
     border: 2px solid #FFD60A;
     padding: 1rem;
 }
@@ -76,6 +76,7 @@
     color: #006bcf;
     font-size: 1.5rem;
     margin-top: 0;
+    line-height: 1.25rem;
 }
 .quote {
     border: 2px solid #FFD60A;

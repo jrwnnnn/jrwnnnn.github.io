@@ -18,9 +18,6 @@ body {
         font-size: 1.2rem;
     }
 }
-p {
-    line-height: 1.25rem;
-}
 .splash {
     display: grid;
     height: 100vh;
@@ -68,12 +65,26 @@ div.body_primary{
 .header {
     font-size: 2.2rem;
     color: #FFD60A;
+    line-height: 1.75rem;
 }
 .subheader {
     margin-top: 0;
     font-size: 1.2rem;
 }
+.textbody {
+    line-height: 1.25rem;
+}
+.link {
+    color: #006bcf;
+}
+highlight {
+    color: #FFD60A;
+}
 .copyright {
     margin-top: 10vh;
     text-align: center;
+}
+.egg  {
+    text-decoration: none;
+    color: inherit;
 }

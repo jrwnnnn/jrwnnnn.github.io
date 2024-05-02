@@ -2,7 +2,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    margin-top: 10vh;
+    margin-top: 7vh; /*Global Value*/
+}
+@media screen and (max-width: 786px) {
+    .images_container{
+        grid-template-columns: 1fr;
+    }
 }
 .images_container img {
     width: 100%;

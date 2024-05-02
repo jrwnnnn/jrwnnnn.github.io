@@ -1,11 +1,11 @@
-.article_container {
+.articles_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 10vh;
+    gap: 1rem;
+    margin-top: 7vh; /*Global Value*/
 }
 @media screen and (max-width: 786px) {
-    .article_container{
+    .articles_container{
         grid-template-columns: 1fr;
     }
 }
@@ -27,11 +27,17 @@
     color: #006bcf;
     font-size: 1.5rem;
     margin-top: 0;
+    line-height: 1.25rem;
 }
 .article_subheading {
     color: #FFFFFF;
     font-size: 1.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
 }
-.article a{
+.article .click_action{
     text-decoration: none;
 }
