@@ -1,4 +1,4 @@
-fetch('/gallery/')
+fetch('https://jrwnnnn.github.io/docs/assets/images/gallery/')
             .then(response => response.text())
             .then(text => {
                 const parser = new DOMParser();
