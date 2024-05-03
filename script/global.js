@@ -36,9 +36,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-if (isLoggedIn) {
-    document.getElementById("favicon").href = "../assets/image/icon.png";
-  }
-});
