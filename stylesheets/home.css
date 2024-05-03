@@ -83,3 +83,11 @@
     border: 2px solid #FFD60A;
     padding: 2rem;
 }
+.youtube_embed {
+    display: grid;
+    height: 75vh;
+    grid-template-rows: 1fr 5fr;
+}
+.youtube_embed iframe {
+    margin: 0;
+}
