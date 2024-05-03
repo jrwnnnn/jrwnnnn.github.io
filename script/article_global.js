@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "../home.html";
     });
     stats.addEventListener("click", function() {
-        window.location.href = "../404.html#navigation";
+        window.location.href = "../stats_404.html;#navigation";
     });
     projects.addEventListener("click", function() {
         window.location.href = "../projects.html#navigation";
