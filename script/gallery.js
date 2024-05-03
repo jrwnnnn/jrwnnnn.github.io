@@ -1,10 +1,5 @@
 fetch('https://jrwnnnn.github.io/docs/assets/images/gallery/')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.text();
-    })
+    .then(response => response.text())
     .then(text => {
         const parser = new DOMParser();
         const html = parser.parseFromString(text, 'text/html');
