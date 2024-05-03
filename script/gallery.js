@@ -1,4 +1,4 @@
-fetch('../docs/assets/gallery/')
+fetch('/gallery/')
             .then(response => response.text())
             .then(text => {
                 const parser = new DOMParser();
