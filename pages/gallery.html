@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="../stylesheets/gallery.css">
     <link rel="icon" href="../docs/assets/images/icon.png" id="favicon">
     <script src="../script/global.js"></script>
+    <script src="../script/gallery.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H16N9DYWLG"></script>
     <title>Gallery</title>
 </head>
 <body>
     <div class="splash">
-        <h4 class="splashtext">Galley</h4>
+        <h4 class="splashtext">Gallery</h4>
     </div>
     <div id="navigation">
         <a id="home">Home</a>
@@ -29,21 +30,12 @@
             <p class="header">Gallery</p>
             <p class="intro_textbody">Gallery < Trash can</p>
         </div>
-        <div class="images_container">
-            
-            <!-- Add entries here. -->
-            <img alt="image_entry" onclick="window.open('../docs/assets/images/gallery/skeleton 245.jpg', '_parent');" src="../docs/assets/images/gallery/skeleton 245.jpg">
-            <video alt="video_entry" onclick="window.open('../docs/assets/images/gallery/flo_mi_O.T.X___By_O.T.X.mp4', '_parent');" autoplay loop muted>
-                <source src="../docs/assets/images/gallery/flo_mi_O.T.X___By_O.T.X.mp4">
-            </video>
-            <img alt="image_entry" onclick="window.open('../docs/assets/images/20240107_091120.jpg', '_parent');" src="../docs/assets/images/20240107_091120.jpg">
-            <img alt="image_entry" onclick="window.open('../docs/assets/images/received_1097884790902785.jpeg', '_parent');" src="../docs/assets/images/received_1097884790902785.jpeg">
-
+        <div class="images_container" id="images_container">
+            <!-- Images will be dynamically added here -->
         </div>
     </div>
     <footer>
         <p class="footer_text"><license id="license_click_action">&copy;2024</license> Project jrwnnnn_. </p>
     </footer>
-    
 </body>
 </html>
