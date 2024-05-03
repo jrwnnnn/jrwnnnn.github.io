@@ -26,3 +26,35 @@
 .images_container video:hover {
     border: 2px solid #FFD60A;
 }
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: none; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 9999; 
+}
+
+.popup-content {
+    display: grid; 
+    justify-content: center; 
+    align-items: center;
+    padding: 0 5vw;
+}
+.popup-image,
+.popup-video {
+    display: grid; 
+    z-index: 10000; 
+    height: 75vh;
+}
+@media screen and (max-width: 786px) {
+    .popup-image,
+    .popup-video {
+        width: 100%;
+        height: auto;
+    }
+}

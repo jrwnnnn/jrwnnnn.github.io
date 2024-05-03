@@ -10,11 +10,17 @@
     <link rel="stylesheet" href="../stylesheets/gallery.css">
     <link rel="icon" href="../docs/assets/images/icon.png" id="favicon">
     <script src="../script/global.js"></script>
-    <script src="../script/gallery.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H16N9DYWLG"></script>
+    <script src="../script/gallery.js"></script>
     <title>Gallery</title>
 </head>
 <body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img src="" alt="Image popup" class="popup-image">
+            <video controls class="popup-video" style="display: none;"></video>
+        </div>
+    </div>     
     <div class="splash">
         <h4 class="splashtext">Gallery</h4>
     </div>
@@ -30,12 +36,28 @@
             <p class="header">Gallery</p>
             <p class="intro_textbody">Gallery < Trash can</p>
         </div>
-        <div class="images_container" id="images_container">
-            <!-- Images will be dynamically added here -->
+        <div class="images_container">
+            
+            <!-- Add entries here. -->
+            <img alt="image_entry" src="../docs/assets/images/gallery/IMG_2024-04-13-15-51-08-083.jpg">
+            <img alt="image_entry" src="../docs/assets/images/gallery/received_1071065650598636.gif">
+            <img alt="image_entry" src="../docs/assets/images/gallery/Screenshot_20240323-195726_Instagram.jpg">
+            <img alt="image_entry" src="../docs/assets/images/gallery/IMG_2024-04-02-10-14-34-053.jpg">
+            <img alt="image_entry" src="../docs/assets/images/gallery/skeleton 245.jpg">
+            <video alt="video_entry" autoplay loop muted>
+                <source src="../docs/assets/images/gallery/flo_mi_O.T.X___By_O.T.X.mp4" type="video/mp4">
+            </video>              
+            <img alt="image_entry" src="../docs/assets/images/gallery/20240107_091120.jpg">
+            <video alt="video_entry" autoplay loop muted>
+                <source src="../docs/assets/images/gallery/lv_0_20231205204948.mp4" type="video/mp4">
+            </video>
+            <img alt="image_entry" src="../docs/assets/images/gallery/idk what is this.jpg">
+
         </div>
     </div>
     <footer>
         <p class="footer_text"><license id="license_click_action">&copy;2024</license> Project jrwnnnn_. </p>
     </footer>
+    
 </body>
 </html>

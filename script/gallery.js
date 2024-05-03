@@ -1,19 +1,35 @@
-fetch('https://jrwnnnn.github.io/docs/assets/images/gallery/')
-    .then(response => response.text())
-    .then(text => {
-        const parser = new DOMParser();
-        const html = parser.parseFromString(text, 'text/html');
-        const images = Array.from(html.querySelectorAll('a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"]'));
-        const imagesContainer = document.getElementById('images_container');
-        images.forEach(image => {
-            const url = 'https://jrwnnnn.github.io/docs/assets/images/gallery/' + image.getAttribute('href');
-            const imgElement = document.createElement('img');
-            imgElement.src = url;
-            imgElement.alt = 'image_entry';
-            imgElement.onclick = () => window.open(url, '_parent');
-            imagesContainer.appendChild(imgElement);
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".images_container img, .images_container video");
+    const popup = document.getElementById("popup");
+    const popupContent = document.querySelector(".popup-content");
+    const popupImage = document.querySelector(".popup-image");
+    const popupVideo = document.querySelector(".popup-video");
+
+    elements.forEach(function (element) {
+        element.addEventListener("click", function () {
+            popup.style.display = "flex"; 
+            if (element.tagName.toLowerCase() === 'img') {
+                popupImage.src = element.src; 
+                popupImage.style.display = "block"; 
+                popupVideo.style.display = "none"; 
+            } else if (element.tagName.toLowerCase() === 'video') {
+                const videoSource = element.querySelector('source');
+                if (videoSource) {
+                    popupVideo.src = videoSource.src;
+                    popupVideo.style.display = "block"; 
+                    popupImage.style.display = "none"; 
+                } else {
+                    console.error('Video element missing source');
+                }
+            }
         });
-    })
-    .catch(error => {
-        console.error('Fetch error:', error);
     });
+
+    popup.addEventListener("click", function (event) {
+        const buffer = 50; 
+        const clickWithinContent = event.target.closest('.popup-content');
+        if (!clickWithinContent) {
+            popup.style.display = "none";
+        }
+    });
+});
