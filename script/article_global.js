@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const license = document.getElementById("license_click_action");
 
     license.addEventListener("click", function() {
-        window.location.href = "../articles/license.html#navigation";
+        window.location.href = "../articles/software_license.html#navigation";
     });
 });
 

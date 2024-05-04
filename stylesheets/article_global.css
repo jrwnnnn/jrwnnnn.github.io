@@ -10,8 +10,12 @@ img {
 }
 .main_body {
     padding-left: 10vw;
+    width: inherit;
 }
 .reference {
     font-size: 1rem;
     margin: 0;
+}
+.indent {
+    margin-left: 3rem;
 }
