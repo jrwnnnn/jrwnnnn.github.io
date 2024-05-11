@@ -9,7 +9,7 @@
     border-top: 1px solid #727171;
     border-bottom: 1px solid #727171;
 }
-a {
+.project_click_action {
     display: grid;
     grid-template-columns: 5fr 1fr;
     text-decoration: none;
