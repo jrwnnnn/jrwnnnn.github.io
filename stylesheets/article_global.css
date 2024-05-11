@@ -11,6 +11,7 @@ img {
 .main_body {
     padding-left: 10vw;
     width: inherit;
+    min-height: 80vh;
 }
 .reference {
     font-size: 1rem;

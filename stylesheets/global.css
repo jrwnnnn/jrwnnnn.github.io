@@ -62,7 +62,6 @@ body {
 
 div.body_primary{
     display: grid;
-    min-height: 100vh;
 }
 .header {
     font-size: 2.2rem;
