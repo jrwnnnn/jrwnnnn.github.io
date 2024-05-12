@@ -5,14 +5,6 @@ gtag('js', new Date());
 gtag('config', 'G-H16N9DYWLG');
 
 document.addEventListener("DOMContentLoaded", function() {
-    const license = document.getElementById("license_click_action");
-
-    license.addEventListener("click", function() {
-        window.location.href = "../articles/software_license.html#navigation";
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
     const home = document.getElementById("home");
     const stats = document.getElementById("stats");
     const projects = document.getElementById("projects");
@@ -36,9 +28,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    if (isLoggedIn) {
-        document.getElementById("favicon").href = "../assets/image/icon.png";
-      }
-    });
