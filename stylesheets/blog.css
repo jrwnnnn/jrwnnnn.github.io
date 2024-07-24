@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
     text-decoration: none;
+    gap: 1rem;
 }
 @media screen and (max-width: 786px) {
     .article .click_action{

@@ -73,7 +73,7 @@ div.body_primary{
     font-size: 1.2rem;
 }
 .textbody {
-    line-height: 1.3rem;
+    line-height: 1.5rem;
 }
 .link {
     color: #006bcf;
@@ -100,4 +100,13 @@ highlight {
 .egg  {
     text-decoration: none;
     color: inherit;
+}
+.emoji {
+    display: inline-block;
+    width: 1.3rem;
+    position: relative;
+    top: .1rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    line-height: 0;
 }

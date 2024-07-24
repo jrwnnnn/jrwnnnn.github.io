@@ -8,9 +8,39 @@ img {
     line-height: 2rem;
     margin-bottom: 0;
 }
+.author {
+    color: #b2b2b2;
+    margin-bottom: 0;
+}
+.verified_icon {
+    width: 1rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.date {
+    color: #b2b2b2;
+    margin-top: 0;
+}
 .main_body {
     padding-left: 10vw;
     min-height: 80vh;
+}
+media_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+    margin: 2rem auto;
+}
+@media screen and (max-width: 786px) {
+    media_container {
+        grid-template-columns: 1fr;
+    }
+}
+.media{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 .reference {
     font-size: 1rem;
