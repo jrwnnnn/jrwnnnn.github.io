@@ -21,6 +21,11 @@ img {
     color: #b2b2b2;
     margin-top: 0;
 }
+.cap {
+    font-size: 1rem;
+    margin: 0;
+    color: #b2b2b2;
+}
 .main_body {
     padding-left: 10vw;
     min-height: 80vh;
@@ -41,10 +46,6 @@ media_container {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-}
-.reference {
-    font-size: 1rem;
-    margin: 0;
 }
 .indent {
     margin-left: 3rem;
