@@ -30,8 +30,7 @@ body {
     justify-self: center;
 }
 @media screen and (max-width: 786px) {
-    .superheader,
-    .superheader_text {
+    .superheader {
         display: none;
     }
 }
