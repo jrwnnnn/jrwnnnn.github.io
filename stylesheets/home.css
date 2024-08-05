@@ -38,10 +38,10 @@
 }
 
 @media screen and (max-width: 786px) {
-    .home_splash {
-        height: 60vh;
+    .superheader {
+        height: 85vh;
     }
-    .home_splashtext {
+    .superheader_text {
         font-size: 3rem;
     }
 }
