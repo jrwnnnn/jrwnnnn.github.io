@@ -26,5 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
     gallery.addEventListener("click", function() {
         window.location.href = "../pages/gallery.html#navigation";
     });
-
+    const images = document.querySelectorAll('img, video');
+    images.forEach(function(img) {
+      img.oncontextmenu = function() {
+        return false;
+      };
+    });
 });
