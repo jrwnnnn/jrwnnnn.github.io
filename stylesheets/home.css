@@ -118,4 +118,15 @@
     padding: 1rem;
     grid-area: yt;
 }
-
+@media screen and (max-width: 900px) {
+    .youtube_embed_grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        border: 2px solid #FFD60A;
+        padding: 1rem;
+        grid-area: yt;
+    }
+}
+.youtube_embed_grid iframe {
+    aspect-ratio: 1/1;
+}

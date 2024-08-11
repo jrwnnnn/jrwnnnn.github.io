@@ -9,10 +9,11 @@ genre{
     background-color: #FFD60A;
     border-radius: 1rem;
     padding: .05rem .4rem;
+    line-height: 1.4rem;
 }
 .socials_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     margin: 1.3rem auto;
 }
 .socials {
@@ -29,7 +30,7 @@ genre{
     justify-self: center;
     -webkit-filter: invert(100%);
     filter: invert(100%);
-    width: 2.5rem;
+    width: 2.1rem;
     margin: 2rem;
 }
 .socials_container a {
