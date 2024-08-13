@@ -8,7 +8,7 @@
     <meta property="og:image" content="../assets/images/github_banner.PNG"/>
     <link rel="stylesheet" type="text/css" href="../stylesheets/global.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/projects.css">
-    <link rel="icon" href="../assets/images/icons/icon.png" id="favicon">
+    <link rel="icon" href="../../assets/images/icons/icon.png" id="favicon">
     <script src="../script/global.js"></script>
     <script src="../script/projects.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H16N9DYWLG"></script>
@@ -32,16 +32,15 @@
         </div>
         <filter>
             <select id="filterSelect">
+                <option value="2">Finished</option>
                 <option value="0">Most recent</option>
                 <option value="1">Active</option>
-                <option value="2">Finished</option>
                 <option value="3">Discontinued</option>
             </select>
             <input type="button" onclick="filter()" class="button" value="Filter">
         </filter>
         <div class="min-height_reg">
             <div class="projects_container">
-
                 <!-- Basic project entry template
                 <div class="project">
                     <div class="col1">
@@ -56,15 +55,6 @@
                 </div> -->
     
                 <!-- Add project entries here. -->
-                <div class="project" onclick="window.replace.href='https://github.com/jrwnnnn/jrwnnnn.github.io'">
-                    <div class="col1">
-                        <p class="project_title active">Project jrwnnnn_ website <sup class="flair_active"> Active</sup><sup class="flair_maintained">Maintained</sup></p>
-                        <p class="project_date">Project initiated: May 1, 2024</p>
-                    </div>
-                    <div class="col2">
-                        <img src="../assets/images/icons/github_icon.png" alt="github_icon">
-                    </div>
-                </div>
                 <div class="project" onclick="window.replace.href='https://github.com/jrwnnnn/pal-project'">
                     <div class="col1">
                         <p class="project_title finished">PAL website school project <sup class="flair_finished"> Finished</sup></p>
@@ -85,17 +75,6 @@
                         <img src="../assets/images/icons/github_icon.png" alt="github_icon">
                     </div>
                 </div>
-                <div class="project" onclick="window.replace.href='https://github.com/jrwnnnn/music-and-video-player'">
-                    <div class="col1">
-                        <p class="project_title discontinued">Web based music and video player school project <sup class="flair_discontinued"> Discontinued</sup></p>
-                        <p class="project_date">Project initiated: February 17, 2024</p>
-                        <p class="project_date">Project discontinued: February 19, 2024</p>
-                    </div>
-                    <div class="col2">
-                        <img src="../assets/images/icons/github_icon.png" alt="github_icon">
-                    </div>
-                </div>
-    
             </div>
         </div>
     </div>

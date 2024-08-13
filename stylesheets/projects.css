@@ -15,23 +15,27 @@ filter {
     font-family: ibm;
     font-size: 1.1rem;
     background-color: #000000;
-    border: solid .1rem white;
+    border: solid .1rem #c2c2c2;
     color: white;
 }
 #filterSelect select option {
     font-family: ibm;
 }
-filter button {
+filter input {
     font-family: ibm;
     font-size: 1.1rem;
-    background-color: white;
+    background-color: #c2c2c2;
     border: none;
+}
+.min-height_reg {
+    min-height: 100vh;
 }
 .projects_container {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
+    margin-bottom: 50vh;
 }
 .project {
     padding: 1.5rem;

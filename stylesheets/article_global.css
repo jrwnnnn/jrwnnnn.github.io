@@ -23,7 +23,7 @@ img {
 }
 .main_body {
     padding-left: 10vw;
-    min-height: 80vh;
+    margin-bottom: 50vh;
 }
 media_container {
     display: grid;
