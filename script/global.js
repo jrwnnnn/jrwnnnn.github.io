@@ -12,19 +12,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const gallery = document.getElementById("gallery");
     
     home.addEventListener("click", function() {
-        window.location.href = "../pages/home.html";
+        window.location.href = "https://jrwnnnn.github.io/pages/home.html";
     });
     stats.addEventListener("click", function() {
-        window.location.href = "../pages/stats_404.html#navigation";
+        window.location.href = "https://jrwnnnn.github.io/pages/stats_404.html#navigation";
     });
     projects.addEventListener("click", function() {
-        window.location.href = "../pages/projects.html#navigation";
+        window.location.href = "https://jrwnnnn.github.io/pages/projects.html#navigation";
     });
     blog.addEventListener("click", function() {
-        window.location.href = "../pages/blog.html#navigation";
+        window.location.href = "https://jrwnnnn.github.io/pages/blog.html#navigation";
     });
     gallery.addEventListener("click", function() {
-        window.location.href = "../pages/gallery.html#navigation";
+        window.location.href = "https://jrwnnnn.github.io/pages/gallery.html#navigation";
     });
     const images = document.querySelectorAll('img, video');
     images.forEach(function(img) {
@@ -32,4 +32,39 @@ document.addEventListener("DOMContentLoaded", function() {
         return false;
       };
     });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    function replaceFileNameWithImage() {
+        const textNodes = document.evaluate('//text()[contains(., ":")]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+        
+        const regex = /:([\w\-]+\.(webp|gif)):?/g;
+        
+        for (let i = 0; i < textNodes.snapshotLength; i++) {
+            const node = textNodes.snapshotItem(i);
+            let nodeText = node.nodeValue;
+            
+            const replacedText = nodeText.replace(regex, (match, p1) => {
+                const baseURL = "https://jrwnnnn.github.io/assets/images/emoji/";
+                const imgURL = `${baseURL}${p1}`;
+                
+                return `<img src="${imgURL}" alt="*****${p1}*****" class="emoji">`;
+            });
+            
+            if (replacedText !== nodeText) {
+                const span = document.createElement('span');
+                span.innerHTML = replacedText;
+                if (node.parentNode) {
+                    node.parentNode.replaceChild(span, node);
+                }
+            }
+        }
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('contextmenu', (event) => {
+                event.preventDefault();
+            });
+        });
+    }
+
+    // Call the function
+    replaceFileNameWithImage();
 });
