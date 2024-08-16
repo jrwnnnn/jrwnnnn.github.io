@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 document.addEventListener('DOMContentLoaded', () => {
     function replaceFileNameWithImage() {
+        // Get all the text nodes in the document
         const textNodes = document.evaluate('//text()[contains(., ":")]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
         
         const regex = /:([\w\-]+\.(webp|gif)):?/g;
@@ -46,8 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const replacedText = nodeText.replace(regex, (match, p1) => {
                 const baseURL = "https://jrwnnnn.github.io/assets/images/emoji/";
                 const imgURL = `${baseURL}${p1}`;
+                const fileNameWithoutExtension = p1.split('.')[0];
                 
-                return `<img src="${imgURL}" alt="*****${p1}*****" class="emoji">`;
+                return `<img src="${imgURL}" alt="${p1}" class="emoji" title=":${fileNameWithoutExtension}:">`;
             });
             
             if (replacedText !== nodeText) {
@@ -58,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
+
         document.querySelectorAll('img').forEach(img => {
             img.addEventListener('contextmenu', (event) => {
                 event.preventDefault();
@@ -65,6 +68,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Call the function
     replaceFileNameWithImage();
 });
