@@ -1,6 +1,0 @@
-.song_list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    margin: 1.25rem auto;
-}
