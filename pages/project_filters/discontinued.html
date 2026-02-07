@@ -1,47 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Projects | Project jrwnnnn_" />
-    <meta property="og:description" content="Here lies the glorious graveyard (or perhaps treasure trove?) of my coding endeavors. Prepare to be amazed (or mildly confused) by my attempts to conquer the digital world." />
-    <meta property="og:image" content="https://jrwnnnn.github.io/assets/images/github_banner.PNG"/>
-    <link rel="stylesheet" type="text/css" href="https://jrwnnnn.github.io/stylesheets/global.css">
-    <link rel="stylesheet" type="text/css" href="https://jrwnnnn.github.io/stylesheets/projects.css">
-    <link rel="icon" href="https://jrwnnnn.github.io/assets/images/icons/icon.png" id="favicon">
-    <script src="https://jrwnnnn.github.io/script/global.js"></script>
-    <script src="https://jrwnnnn.github.io/script/projects.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H16N9DYWLG"></script>
+    <meta
+      property="og:description"
+      content="Here lies the glorious graveyard (or perhaps treasure trove?) of my coding endeavors. Prepare to be amazed (or mildly confused) by my attempts to conquer the digital world."
+    />
+    <meta
+      property="og:image"
+      content="https://legacy.jrwnnnn.me/assets/images/github_banner.PNG"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://legacy.jrwnnnn.me/stylesheets/global.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://legacy.jrwnnnn.me/stylesheets/projects.css"
+    />
+    <link
+      rel="icon"
+      href="https://legacy.jrwnnnn.me/assets/images/icons/icon.png"
+      id="favicon"
+    />
+    <script src="https://legacy.jrwnnnn.me/script/global.js"></script>
+    <script src="https://legacy.jrwnnnn.me/script/projects.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H16N9DYWLG"
+    ></script>
     <title>Projects</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="superheader">
-        <h4 class="superheader_text">Projects</h4>
+      <h4 class="superheader_text">Projects</h4>
     </div>
     <div id="navigation">
-        <a id="home">Home</a>
-        <a id="stats">Stats</a>
-        <a id="projects">Projects</a>
-        <a id="blog">Blog</a>
-        <a id="gallery">Gallery</a>
+      <a id="home">Home</a>
+      <a id="stats">Stats</a>
+      <a id="projects">Projects</a>
+      <a id="blog">Blog</a>
+      <a id="gallery">Gallery</a>
     </div>
     <div class="body_primary">
-        <div class="intro">
-            <p class="header">Projects</p>
-            <p class="intro_textbody">Here lies the glorious graveyard of my coding projects. Prepare to be amazed (or mildly confused) by my attempts to conquer the digital world.</p>
-        </div>
-        <filter>
-            <select id="filterSelect">
-                <option value="3">Discontinued</option>
-                <option value="0">Most recent</option>
-                <option value="1">Active</option>
-                <option value="2">Finished</option>
-            </select>
-            <input type="button" onclick="filter()" class="button" value="Filter">
-        </filter>
-        <div class="min-height_reg">
-            <div class="projects_container">
-                <!-- Basic project entry template
+      <div class="intro">
+        <p class="header">Projects</p>
+        <p class="intro_textbody">
+          Here lies the glorious graveyard of my coding projects. Prepare to be
+          amazed (or mildly confused) by my attempts to conquer the digital
+          world.
+        </p>
+      </div>
+      <filter>
+        <select id="filterSelect">
+          <option value="3">Discontinued</option>
+          <option value="0">Most recent</option>
+          <option value="1">Active</option>
+          <option value="2">Finished</option>
+        </select>
+        <input type="button" onclick="filter()" class="button" value="Filter" />
+      </filter>
+      <div class="min-height_reg">
+        <div class="projects_container">
+          <!-- Basic project entry template
                 <div class="project">
                     <div class="col1">
                         <p class="project_title [SELECT: active|finished|discontinued|hold]">[ADD: PROJECT TITLE] <sup class="[SELECT: flair_active|flair_finished|flair_discontinued|flair_hold]"> Active</sup></p> (You can add multiple flairs.)
@@ -50,26 +75,50 @@
                         [ADD THIS LINE IF PROJECT WAS DISCONTINUED]<p class="project_date">Project discontinued: [ADD: DATE PROJECT WAS DISCONTINUED]</p>
                     </div>
                     <div class="col2">
-                        <img src="https://jrwnnnn.github.io/assets/images/icons/github_icon.png" alt="github_icon">
+                        <img src="https://legacy.jrwnnnn.me/assets/images/icons/github_icon.png" alt="github_icon">
                     </div>
                 </div> -->
-                <!-- Add project entries here. -->
-                <div class="project" onclick="window.replace.href='https://github.com/jrwnnnn/music-and-video-player'">
-                    <div class="col1">
-                        <p class="project_title discontinued">Web based music and video player school project <sup class="flair_discontinued"> Discontinued</sup></p>
-                        <p class="project_date">Project initiated: February 17, 2024</p>
-                        <p class="project_date">Project discontinued: February 19, 2024</p>
-                    </div>
-                    <div class="col2">
-                        <img src="https://jrwnnnn.github.io/assets/images/icons/github_icon.png" alt="github_icon">
-                    </div>
-                </div>
+          <!-- Add project entries here. -->
+          <div
+            class="project"
+            onclick="
+              window.replace.href =
+                'https://github.com/jrwnnnn/music-and-video-player'
+            "
+          >
+            <div class="col1">
+              <p class="project_title discontinued">
+                Web based music and video player school project
+                <sup class="flair_discontinued"> Discontinued</sup>
+              </p>
+              <p class="project_date">Project initiated: February 17, 2024</p>
+              <p class="project_date">
+                Project discontinued: February 19, 2024
+              </p>
             </div>
+            <div class="col2">
+              <img
+                src="https://legacy.jrwnnnn.me/assets/images/icons/github_icon.png"
+                alt="github_icon"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <footer>
-        <a class="link" href="https://jrwnnnn.github.io" target="_blank"><yellow>Project jrwnnnn_</yellow></a> &copy2024 by <a class="link" href="https://github.com/jrwnnnn">Mark Jerwin</a> is licensed under <a class="link" href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank">CC BY-ND 4.0</a>
+      <a class="link" href="https://legacy.jrwnnnn.me" target="_blank"
+        ><yellow>Project jrwnnnn_</yellow></a
+      >
+      &copy2024 by
+      <a class="link" href="https://github.com/jrwnnnn">Mark Jerwin</a> is
+      licensed under
+      <a
+        class="link"
+        href="https://creativecommons.org/licenses/by-nd/4.0/"
+        target="_blank"
+        >CC BY-ND 4.0</a
+      >
     </footer>
-    
-</body>
+  </body>
 </html>

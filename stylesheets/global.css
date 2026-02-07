@@ -1,115 +1,115 @@
 @font-face {
-    font-family: ibm;
-    src: url(https://jrwnnnn.github.io/assets/fonts/ibm_vga_8x16.ttf);
+  font-family: ibm;
+  src: url(https://legacy.jrwnnnn.me/assets/fonts/ibm_vga_8x16.ttf);
 }
 body {
-    min-height: 100vh;
-    background-color: #000;
-    color: #FFFFFF;
-    font-family: ibm;
-    font-size: 1.3rem;
-    padding-left: 15vw;
-    padding-right: 15vw;
+  min-height: 100vh;
+  background-color: #000;
+  color: #ffffff;
+  font-family: ibm;
+  font-size: 1.3rem;
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
 @media screen and (max-width: 786px) {
-    body {
-        padding-left: 5vw;
-        padding-right: 5vw;
-        font-size: 1.2rem;
-    }
+  body {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1.2rem;
+  }
 }
 .superheader {
-    display: grid;
-    height: 100vh;
+  display: grid;
+  height: 100vh;
 }
 .superheader_text {
-    font-size: 3.5rem;
-    letter-spacing: .25rem;
-    color: #FFD60A;
-    align-self: center;
-    justify-self: center;
+  font-size: 3.5rem;
+  letter-spacing: 0.25rem;
+  color: #ffd60a;
+  align-self: center;
+  justify-self: center;
 }
 @media screen and (max-width: 786px) {
-    .superheader {
-        display: none;
-    }
+  .superheader {
+    display: none;
+  }
 }
 
 #navigation {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 8888;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 8888;
 }
 
 #navigation a {
-    color: #006bcf;
-    text-align: center;
-    text-decoration: none;
-    background-color: #000;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+  color: #006bcf;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 #navigation a:hover {
-    cursor: pointer;
-    color: #FFD60A;
-    text-decoration: underline;
+  cursor: pointer;
+  color: #ffd60a;
+  text-decoration: underline;
 }
 
-div.body_primary{
-    display: grid;
+div.body_primary {
+  display: grid;
 }
 .header {
-    font-size: 2.2rem;
-    color: #FFD60A;
-    margin: 1.5rem auto;
+  font-size: 2.2rem;
+  color: #ffd60a;
+  margin: 1.5rem auto;
 }
 .subheader {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .textbody {
-    line-height: 1.5rem;
+  line-height: 1.5rem;
 }
 .link {
-    color: #006bcf;
-    text-decoration: none;
+  color: #006bcf;
+  text-decoration: none;
 }
 .link:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 .ref_link {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 yellow {
-    color: #FFD60A;
+  color: #ffd60a;
 }
 blue {
-    color: #006bcf;
+  color: #006bcf;
 }
 .emoji {
-    display: inline-block;
-    width: 1.3rem;
-    position: relative;
-    top: .1rem;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    line-height: 0;
+  display: inline-block;
+  width: 1.3rem;
+  position: relative;
+  top: 0.1rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  line-height: 0;
 }
 footer {
-    margin: 10vh auto 2vh auto;
-    text-align: center;
-    font-size: 1.1rem;
+  margin: 10vh auto 2vh auto;
+  text-align: center;
+  font-size: 1.1rem;
 }
-.egg  {
-    text-decoration: none;
-    color: inherit;
+.egg {
+  text-decoration: none;
+  color: inherit;
 }
 .cap {
-    font-size: 1rem;
-    margin: 0;
-    color: #b2b2b2;
+  font-size: 1rem;
+  margin: 0;
+  color: #b2b2b2;
 }
